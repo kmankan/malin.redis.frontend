@@ -6,7 +6,7 @@ buildCommand = "bun run build"
 startCommand = "bun run start"
 restartPolicyType = "ON_FAILURE"
 healthcheckPath = "/"
-healthcheckTimeout = "30s"
+healthcheckTimeout = "30"
 
 [deploy.env]
 NODE_ENV = "production"
