@@ -11,3 +11,4 @@ healthcheckTimeout = 30
 [deploy.env]
 NODE_ENV = "production"
 PORT = "3090"
+VITE_RAILWAY_PRIVATE_DOMAIN = "${RAILWAY_PRIVATE_DOMAIN}"
