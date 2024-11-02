@@ -1,6 +1,6 @@
 // src/App.tsx
 import { useState, useEffect } from 'react'
-const API_URL = `https://${import.meta.env.VITE_RAILWAY_PRIVATE_DOMAIN}`
+const API_URL = `https://${import.meta.env.VITE_RAILWAY_PUBLIC_DOMAIN}`
 
 function App() {
   const [clicks, setClicks] = useState(0)
