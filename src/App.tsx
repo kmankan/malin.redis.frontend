@@ -16,9 +16,10 @@ function App() {
         let storedUserId = localStorage.getItem('userId')
 
         if (!storedUserId) {
-          const response = await fetch(API_URL)
+          const response = await fetch(`${API_URL}/register-user`)
           const data = await response.json()
           storedUserId = data.userId
+          console.log('the userId was set to', storedUserId)
           localStorage.setItem('userId', storedUserId!)
         }
 
